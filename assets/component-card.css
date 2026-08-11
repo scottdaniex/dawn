@@ -593,3 +593,32 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+
+/* The Focus Drawer product-card affordances */
+.product-card-wrapper .card {
+  transition: box-shadow var(--duration-short) ease, transform var(--duration-short) ease;
+}
+
+.product-card-wrapper:hover .card,
+.product-card-wrapper:focus-within .card {
+  box-shadow: 0 0.8rem 2rem rgba(var(--color-foreground), 0.12);
+  transform: translateY(-0.2rem);
+}
+
+.product-card-wrapper .full-unstyled-link:focus-visible {
+  outline: 0.3rem solid rgb(var(--color-foreground));
+  outline-offset: 0.4rem;
+  border-radius: var(--buttons-radius-outset);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-card-wrapper .card {
+    transition: none;
+  }
+
+  .product-card-wrapper:hover .card,
+  .product-card-wrapper:focus-within .card {
+    transform: none;
+  }
+}

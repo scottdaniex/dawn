@@ -6,16 +6,77 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "Make your next step easier to see.",
             "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Simple organization tools for busy minds, workspaces, and everyday routines.",
+            "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Shop organization tools",
             "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
+            "button_label_2": "Explore the Focus Station",
+            "button_link_2": "shopify://collections/all",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "image_behavior": "none",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
+    "focus_intro": {
+      "type": "rich-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "THE FOCUS DRAWER",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Simple systems for busy minds.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We curate practical organization and productivity tools that make routines, tasks, and spaces easier to navigate \u2014 without medical claims, shame, or cluttered design.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore the drawer",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -23,53 +84,171 @@
         }
       },
       "block_order": [
+        "caption",
         "heading",
+        "text",
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "organizing_pillars": {
+      "type": "multicolumn",
+      "blocks": {
+        "visual_cues": {
+          "type": "column",
+          "settings": {
+            "title": "Make tasks visible",
+            "text": "<p>Use clear prompts, planners, labels, and open storage to help the next step stay easy to notice.</p>",
+            "link_label": "Shop visual cues",
+            "link": "shopify://collections/all"
+          }
+        },
+        "reset_zones": {
+          "type": "column",
+          "settings": {
+            "title": "Keep essentials within reach",
+            "text": "<p>Create dedicated places for chargers, pens, papers, and everyday carry items so transitions feel simpler.</p>",
+            "link_label": "Shop organizers",
+            "link": "shopify://collections/all"
+          }
+        },
+        "time_tools": {
+          "type": "column",
+          "settings": {
+            "title": "Build systems that are easy to return to",
+            "text": "<p>Choose tools that reset quickly and fit real routines, from desk drawers to weekly planning stations.</p>",
+            "link_label": "Shop planning tools",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "visual_cues",
+        "reset_zones",
+        "time_tools"
+      ],
+      "settings": {
+        "title": "Why The Focus Drawer?",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "circle",
+        "button_label": "Shop all focus-friendly picks",
+        "button_link": "shopify://collections/all",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Featured organization tools",
         "heading_size": "h2",
-        "description": "",
-        "show_description": false,
+        "description": "<p>Placeholder products for launch: Visual Countdown Timer, Undated Daily Task Pad, Magnetic Weekly Planner, Clear Desktop Drawer Organizer, Portable 3-Tier Storage Cart, and Cable Management Box.</p>",
+        "show_description": true,
         "description_style": "body",
         "collection": "all",
-        "products_to_show": 8,
+        "products_to_show": 6,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "swipe_on_mobile": false,
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "standard",
         "columns_mobile": "2",
         "padding_top": 44,
         "padding_bottom": 36
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get practical reset ideas.",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Sign up for concise organizing tips, launch updates, and product notes. Placeholder: replace with your final email marketing copy before launch.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "brand_story": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Built for everyday resets.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Focus Drawer is for adults, students, remote workers, and anyone who prefers simple, visible systems. Our goal is to make useful tools easier to find, compare, and put to work in your own space.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "focus_intro",
+    "organizing_pillars",
+    "featured_collection",
+    "brand_story",
+    "newsletter"
   ]
 }
