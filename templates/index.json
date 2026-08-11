@@ -6,24 +6,24 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "The Focus Drawer",
+            "heading": "Make your next step easier to see.",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Focus-friendly tools, tidy-desk essentials, and ADHD-supportive accessories for calmer starts, cleaner systems, and fewer lost things.",
+            "text": "Simple organization tools for busy minds, workspaces, and everyday routines.",
             "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop focus tools",
+            "button_label_1": "Shop organization tools",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
-            "button_label_2": "Build your organizing kit",
+            "button_label_2": "Explore the Focus Station",
             "button_link_2": "shopify://collections/all",
             "button_style_secondary_2": true
           }
@@ -53,7 +53,7 @@
         "caption": {
           "type": "caption",
           "settings": {
-            "caption": "FOCUS-FRIENDLY ORGANIZING",
+            "caption": "THE FOCUS DRAWER",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -61,14 +61,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Everything has a home \u2014 especially your attention.",
+            "heading": "Simple systems for busy minds.",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>The Focus Drawer curates practical planners, desk accessories, reset bins, labels, timers, and small systems made for real-life brains. Create visible cues, reduce clutter friction, and make it easier to start again.</p>"
+            "text": "<p>We curate practical organization and productivity tools that make routines, tasks, and spaces easier to navigate \u2014 without medical claims, shame, or cluttered design.</p>"
           }
         },
         "button": {
@@ -105,7 +105,7 @@
           "type": "column",
           "settings": {
             "title": "Make tasks visible",
-            "text": "<p>Color-coded notes, labels, trays, and boards that keep priorities in sight without adding noise.</p>",
+            "text": "<p>Use clear prompts, planners, labels, and open storage to help the next step stay easy to notice.</p>",
             "link_label": "Shop visual cues",
             "link": "shopify://collections/all"
           }
@@ -113,8 +113,8 @@
         "reset_zones": {
           "type": "column",
           "settings": {
-            "title": "Create simple reset zones",
-            "text": "<p>Catch-all drawers, bins, pouches, and desk organizers for quick cleanups and smoother transitions.</p>",
+            "title": "Keep essentials within reach",
+            "text": "<p>Create dedicated places for chargers, pens, papers, and everyday carry items so transitions feel simpler.</p>",
             "link_label": "Shop organizers",
             "link": "shopify://collections/all"
           }
@@ -122,8 +122,8 @@
         "time_tools": {
           "type": "column",
           "settings": {
-            "title": "Support time awareness",
-            "text": "<p>Timers, planners, checklists, and routine helpers designed to make starting and stopping feel less slippery.</p>",
+            "title": "Build systems that are easy to return to",
+            "text": "<p>Choose tools that reset quickly and fit real routines, from desk drawers to weekly planning stations.</p>",
             "link_label": "Shop planning tools",
             "link": "shopify://collections/all"
           }
@@ -135,11 +135,11 @@
         "time_tools"
       ],
       "settings": {
-        "title": "Find your next low-friction system",
+        "title": "Why The Focus Drawer?",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "circle",
-        "button_label": "Shop all ADHD-friendly picks",
+        "button_label": "Shop all focus-friendly picks",
         "button_link": "shopify://collections/all",
         "columns_desktop": 3,
         "column_alignment": "center",
@@ -154,13 +154,13 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Best sellers for focused spaces",
+        "title": "Featured organization tools",
         "heading_size": "h2",
-        "description": "<p>Desk helpers, organizing accessories, and routine-friendly finds from The Focus Drawer.</p>",
+        "description": "<p>Placeholder products for launch: Visual Countdown Timer, Undated Daily Task Pad, Magnetic Weekly Planner, Clear Desktop Drawer Organizer, Portable 3-Tier Storage Cart, and Cable Management Box.</p>",
         "show_description": true,
         "description_style": "body",
         "collection": "all",
-        "products_to_show": 8,
+        "products_to_show": 6,
         "columns_desktop": 4,
         "color_scheme": "scheme-2",
         "full_width": false,
@@ -168,12 +168,12 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "swipe_on_mobile": false,
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "standard",
         "columns_mobile": "2",
         "padding_top": 44,
         "padding_bottom": 36
@@ -185,14 +185,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Open the drawer to calmer routines",
+            "heading": "Get practical reset ideas.",
             "heading_size": "h1"
           }
         },
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Get bite-size organizing tips, product drops, and focus-friendly reset ideas in your inbox.</p>"
+            "text": "<p>Sign up for concise organizing tips, launch updates, and product notes. Placeholder: replace with your final email marketing copy before launch.</p>"
           }
         },
         "email_form": {
@@ -211,6 +211,36 @@
         "padding_top": 52,
         "padding_bottom": 52
       }
+    },
+    "brand_story": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Built for everyday resets.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Focus Drawer is for adults, students, remote workers, and anyone who prefers simple, visible systems. Our goal is to make useful tools easier to find, compare, and put to work in your own space.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -218,6 +248,7 @@
     "focus_intro",
     "organizing_pillars",
     "featured_collection",
+    "brand_story",
     "newsletter"
   ]
 }

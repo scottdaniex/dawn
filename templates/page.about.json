@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "about_intro": {
+      "type": "rich-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "ABOUT THE FOCUS DRAWER",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Practical tools for routines, tasks, and spaces.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Focus Drawer creates and curates organization tools for people who like clear, visible systems. We focus on practical products that help everyday items, plans, and workspace essentials have an easy place to land.</p><p>Our tone is supportive and useful \u2014 never clinical, never patronizing, and always grounded in everyday organizing rather than medical promises.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "caption",
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    }
+  },
+  "order": [
+    "about_intro"
+  ]
+}
