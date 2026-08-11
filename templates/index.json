@@ -6,16 +6,77 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "The Focus Drawer",
             "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Focus-friendly tools, tidy-desk essentials, and ADHD-supportive accessories for calmer starts, cleaner systems, and fewer lost things.",
+            "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Shop focus tools",
             "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
+            "button_label_2": "Build your organizing kit",
+            "button_link_2": "shopify://collections/all",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "image_behavior": "none",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
+    "focus_intro": {
+      "type": "rich-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "FOCUS-FRIENDLY ORGANIZING",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Everything has a home \u2014 especially your attention.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Focus Drawer curates practical planners, desk accessories, reset bins, labels, timers, and small systems made for real-life brains. Create visible cues, reduce clutter friction, and make it easier to start again.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore the drawer",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -23,34 +84,85 @@
         }
       },
       "block_order": [
+        "caption",
         "heading",
+        "text",
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "organizing_pillars": {
+      "type": "multicolumn",
+      "blocks": {
+        "visual_cues": {
+          "type": "column",
+          "settings": {
+            "title": "Make tasks visible",
+            "text": "<p>Color-coded notes, labels, trays, and boards that keep priorities in sight without adding noise.</p>",
+            "link_label": "Shop visual cues",
+            "link": "shopify://collections/all"
+          }
+        },
+        "reset_zones": {
+          "type": "column",
+          "settings": {
+            "title": "Create simple reset zones",
+            "text": "<p>Catch-all drawers, bins, pouches, and desk organizers for quick cleanups and smoother transitions.</p>",
+            "link_label": "Shop organizers",
+            "link": "shopify://collections/all"
+          }
+        },
+        "time_tools": {
+          "type": "column",
+          "settings": {
+            "title": "Support time awareness",
+            "text": "<p>Timers, planners, checklists, and routine helpers designed to make starting and stopping feel less slippery.</p>",
+            "link_label": "Shop planning tools",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "visual_cues",
+        "reset_zones",
+        "time_tools"
+      ],
+      "settings": {
+        "title": "Find your next low-friction system",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "circle",
+        "button_label": "Shop all ADHD-friendly picks",
+        "button_link": "shopify://collections/all",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Best sellers for focused spaces",
         "heading_size": "h2",
-        "description": "",
-        "show_description": false,
+        "description": "<p>Desk helpers, organizing accessories, and routine-friendly finds from The Focus Drawer.</p>",
+        "show_description": true,
         "description_style": "body",
         "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -66,10 +178,46 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Open the drawer to calmer routines",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Get bite-size organizing tips, product drops, and focus-friendly reset ideas in your inbox.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "focus_intro",
+    "organizing_pillars",
+    "featured_collection",
+    "newsletter"
   ]
 }
