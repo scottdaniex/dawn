@@ -2,9 +2,9 @@
   "current": "Dawn",
   "presets": {
     "Dawn": {
-      "logo": "focusdrawer-logo.png",
+      "logo": "",
       "logo_width": 160,
-      "favicon": "focusdrawer-logo.png",
+      "favicon": "",
       "customer_account_menu": "customer-account-main-menu",
       "color_schemes": {
         "scheme-1": {

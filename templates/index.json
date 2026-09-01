@@ -24,7 +24,7 @@
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
             "button_label_2": "Explore Setup",
-            "button_link_2": "#organizing_pillars",
+            "button_link_2": "shopify://collections/all",
             "button_style_secondary_2": true
           }
         }
@@ -125,7 +125,7 @@
             "title": "3. Ergonomics",
             "text": "<p>Smooth ball-bearing slides and stealth mounting engineered for all standing and sit-stand desks. Low-profile chassis maximizes knee clearance with zero-sag steel stability.</p>",
             "link_label": "View Ergonomic Specs",
-            "link": "#dimension_comparison"
+            "link": "shopify://collections/all"
           }
         }
       },

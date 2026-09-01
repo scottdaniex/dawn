@@ -7,7 +7,7 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
 
-    {%- if settings.favicon != blank -%}
+    {%- if settings.favicon != blank and settings.favicon.width -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- else -%}
       <link rel="icon" type="image/png" href="{{ 'focusdrawer-logo.png' | asset_url }}">
