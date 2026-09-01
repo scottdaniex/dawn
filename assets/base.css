@@ -3641,3 +3641,10 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* FocusDrawer Testimonial Verified Badge */
+.multicolumn-card__info em:first-of-type {
+  color: #E5A93C;
+  font-style: normal;
+  font-weight: 600;
+}
