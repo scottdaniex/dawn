@@ -6,14 +6,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Master Your Workspace Flow. Under-Desk Focus Drawers & Clean Organization.",
+            "heading": "Reclaim Your Desk. Master Your Focus.",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Precision aerospace aluminum under-desk focus drawers and clean organization systems engineered to eliminate surface clutter and keep deep work within reach.",
+            "text": "Ultra-slim under-desk focus drawers precision-engineered from aerospace steel. Eliminate surface clutter, route cables cleanly, and keep deep work essentials within silent reach.",
             "text_style": "body"
           }
         },
@@ -23,7 +23,7 @@
             "button_label_1": "Shop Focus Drawer",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
-            "button_label_2": "Explore Setup",
+            "button_label_2": "Explore Workspace Gear",
             "button_link_2": "shopify://collections/all",
             "button_style_secondary_2": true
           }
@@ -35,7 +35,7 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 20,
+        "image_overlay_opacity": 30,
         "image_height": "large",
         "desktop_content_position": "middle-left",
         "show_text_box": true,
