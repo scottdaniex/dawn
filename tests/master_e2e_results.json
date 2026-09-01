@@ -1,0 +1,390 @@
+﻿{
+    "Metadata":  {
+                     "SuiteName":  "FocusDrawer Shopify Dawn Theme E2E Test Suite",
+                     "PowerShellVersion":  "5.1.19041.6456",
+                     "Timestamp":  "2026-09-01T10:35:59.7381627-07:00",
+                     "CLRVersion":  "4.0.30319.42000",
+                     "TargetRepo":  "C:\\Users\\asedacasd\\.gemini\\antigravity\\scratch\\dawn"
+                 },
+    "Summary":  {
+                    "Passed":  43,
+                    "DurationSeconds":  0.941,
+                    "Failed":  0,
+                    "Total":  43,
+                    "PassRate":  100,
+                    "Warnings":  0
+                },
+    "Tiers":  {
+                  "Tier1_FeatureCoverage":  {
+                                                "Total":  24,
+                                                "Passed":  24,
+                                                "Failed":  0,
+                                                "Tests":  [
+                                                              {
+                                                                  "TestId":  "T1.R1.01",
+                                                                  "Description":  "FocusDrawer Logo Asset Presence \u0026 High-Resolution ARGB Buffer",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "PNG 1024x1024 px, Format: Format32bppArgb, Size: 603432 bytes"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R1.02",
+                                                                  "Description":  "Theme Settings Logo \u0026 Favicon Configuration in settings_data.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Current Preset: Dawn, logo: \u0027focusdrawer-logo.png\u0027, logo_width: 160"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R1.03",
+                                                                  "Description":  "5-Scheme Color Palette Definitions in settings_data.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Schemes count: 5 (scheme-1, scheme-2, scheme-3, scheme-4, scheme-5)"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R1.04",
+                                                                  "Description":  "Dynamic CSS Variable Bindings (--color-*) in layout/theme.liquid",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Found CSS vars: bg=True, fg=True, btn=True"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R1.05",
+                                                                  "Description":  "Primary Button \u0026 Focus Ring Styling Architecture in assets/base.css",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Button class: True, FocusVisible: True, ColorToken: True"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R1.06",
+                                                                  "Description":  "Typography Hierarchy and Scaling System Configuration",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Heading scale: 115%, Body scale: 105%"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R2.01",
+                                                                  "Description":  "Modular Hero Showcase Section in templates/index.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Found hero section \u0027image_banner\u0027 with type \u0027image-banner\u0027"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R2.02",
+                                                                  "Description":  "3-Pillar Value Proposition Grid (multicolumn) in templates/index.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Found multicolumn section \u0027customer_testimonials\u0027"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R2.03",
+                                                                  "Description":  "Featured Collection Showcase Section in templates/index.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Found featured-collection section \u0027featured_collection\u0027"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R2.04",
+                                                                  "Description":  "Interactive Feature / Dimensions Specification Section in index.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Found specs highlight section \u0027brand_story\u0027 of type \u0027rich-text\u0027"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R2.05",
+                                                                  "Description":  "Customer Testimonials \u0026 Social Proof Verification in index.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Index has 8 sections (brand_story, customer_testimonials, dimension_comparison, featured_collection, focus_intro, image_banner, newsletter, organizing_pillars)"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R2.06",
+                                                                  "Description":  "Community / Newsletter Callout Architecture in index.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Found newsletter/community section \u0027newsletter\u0027"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R3.01",
+                                                                  "Description":  "High-Resolution Product Media Gallery Configuration in product.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Found main-product section \u0027main\u0027 with gallery settings"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R3.02",
+                                                                  "Description":  "Dynamic Variant Selector Block Architecture in templates/product.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Found variant_picker block \u0027variant_picker\u0027 in section \u0027main\u0027"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R3.03",
+                                                                  "Description":  "Expandable Technical Spec Accordion Tabs in templates/product.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Found 4 collapsible_tab blocks in product template"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R3.04",
+                                                                  "Description":  "Sticky \u0027Add to Cart\u0027 \u0026 Scroll Synchronization Architecture",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "StickyInfo setting: True, Script present: True"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R3.05",
+                                                                  "Description":  "Buy Buttons \u0026 Add to Cart Action Integration in buy-buttons.liquid",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "product-form: True, submit button: True"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R3.06",
+                                                                  "Description":  "Product Price Block \u0026 Currency Presentation in product.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Found price block \u0027price\u0027 in section \u0027main\u0027"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R4.01",
+                                                                  "Description":  "Branded Top Announcement Bar in sections/announcement-bar.liquid",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "announcement-bar class found: True"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R4.02",
+                                                                  "Description":  "Responsive Mobile Navigation Drawer in snippets/header-drawer.liquid",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "menu-drawer class found: True"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R4.03",
+                                                                  "Description":  "Slide-Out Cart Drawer Configuration (cart_type: \u0027drawer\u0027)",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "settings_data.json cart_type is \u0027drawer\u0027"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R4.04",
+                                                                  "Description":  "Slide-Out Cart Drawer Markup Structure in snippets/cart-drawer.liquid",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "cart-drawer class found in snippets/cart-drawer.liquid"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R4.05",
+                                                                  "Description":  "Cart Drawer Component Stylesheet in assets/component-cart-drawer.css",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Cart drawer CSS rules present (10804 bytes)"
+                                                              },
+                                                              {
+                                                                  "TestId":  "T1.R4.06",
+                                                                  "Description":  "Faceted Filtering \u0026 Collection Grid in templates/collection.json",
+                                                                  "Status":  "PASS",
+                                                                  "Passed":  true,
+                                                                  "Details":  "Collection grid section found in templates/collection.json (hasGrid: True)"
+                                                              }
+                                                          ]
+                                            },
+                  "Tier2_BoundaryCases":  {
+                                              "Total":  10,
+                                              "Passed":  10,
+                                              "Failed":  0,
+                                              "Tests":  [
+                                                            {
+                                                                "TestId":  "T2.ED.01",
+                                                                "Description":  "Shipping Progress Meter: Zero Subtotal (.00) Edge Case Arithmetic",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "Computed Progress: 0%, Remaining Cents: 7500 (no NaN / division by zero)"
+                                                            },
+                                                            {
+                                                                "TestId":  "T2.ED.02",
+                                                                "Description":  "Shipping Progress Meter: Exact Threshold (.00) Match Arithmetic",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "Computed Progress: 100%, Remaining Cents: 0 (unlocked celebration)"
+                                                            },
+                                                            {
+                                                                "TestId":  "T2.ED.03",
+                                                                "Description":  "Shipping Progress Meter: Overshoot Subtotal (.00) Clamping",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "Computed Progress: 100% (clamped at 100%), Remaining Cents: 0"
+                                                            },
+                                                            {
+                                                                "TestId":  "T2.ED.04",
+                                                                "Description":  "Header Brand Logo Graceful Fallback (shop.name / default brand SVG)",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "Logo condition: True, shop.name fallback: True"
+                                                            },
+                                                            {
+                                                                "TestId":  "T2.ED.05",
+                                                                "Description":  "Sold Out / Unavailable Variant Form State \u0026 Button Disablement",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "available condition: True, disabled attribute: True"
+                                                            },
+                                                            {
+                                                                "TestId":  "T2.ED.06",
+                                                                "Description":  "Single-Variant Product Omission Guard (has_only_default_variant)",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "has_only_default_variant guard found: True"
+                                                            },
+                                                            {
+                                                                "TestId":  "T2.ED.07",
+                                                                "Description":  "Strict RFC 8259 Schema Engine: Trailing Comma Rejection",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "JSON Engine correctly raised exception on malformed trailing comma syntax"
+                                                            },
+                                                            {
+                                                                "TestId":  "T2.ED.08",
+                                                                "Description":  "Liquid AST Delimiter \u0026 Filter Pipeline Boundary Stress",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "Complex filter pipelines and statement delimiters matched cleanly"
+                                                            },
+                                                            {
+                                                                "TestId":  "T2.ED.09",
+                                                                "Description":  "Standard Responsive Breakpoint Consistency (750px \u0026 990px)",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "Found standard Dawn/FocusDrawer breakpoints (750px: True, 990px: True)"
+                                                            },
+                                                            {
+                                                                "TestId":  "T2.ED.10",
+                                                                "Description":  "Accordion Content HTML Entity \u0026 Rich Text Integrity",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "HTML paragraphs and entity encodings (\u0026amp;) validated without double-encoding"
+                                                            }
+                                                        ]
+                                          },
+                  "Tier3_CrossFeature":  {
+                                             "Total":  5,
+                                             "Passed":  5,
+                                             "Failed":  0,
+                                             "Tests":  [
+                                                           {
+                                                               "TestId":  "T3.XF.01",
+                                                               "Description":  "Color Scheme Scoping \u0026 Multi-Container CSS Variable Isolation",
+                                                               "Status":  "PASS",
+                                                               "Passed":  true,
+                                                               "Details":  "theme.liquid defines dynamic color scheme loops for isolated container styling"
+                                                           },
+                                                           {
+                                                               "TestId":  "T3.XF.02",
+                                                               "Description":  "Quick Add Trigger -\u003e Cart Drawer PubSub Event Synchronization",
+                                                               "Status":  "PASS",
+                                                               "Passed":  true,
+                                                               "Details":  "QuickAdd trigger: True, PubSub cart update handler: True"
+                                                           },
+                                                           {
+                                                               "TestId":  "T3.XF.03",
+                                                               "Description":  "Sticky ATC / Product Form Variant Change State Synchronization",
+                                                               "Status":  "PASS",
+                                                               "Passed":  true,
+                                                               "Details":  "product-info.js variant change listener present: True"
+                                                           },
+                                                           {
+                                                               "TestId":  "T3.XF.04",
+                                                               "Description":  "Drawer Navigation \u0026 Cart Modal Stacking with Body Scroll Lock",
+                                                               "Status":  "PASS",
+                                                               "Passed":  true,
+                                                               "Details":  "trapFocus: True, prevent-scroll lock: True"
+                                                           },
+                                                           {
+                                                               "TestId":  "T3.XF.05",
+                                                               "Description":  "Collection Faceted Filters -\u003e Product Card Quick-Add Interoperability",
+                                                               "Status":  "PASS",
+                                                               "Passed":  true,
+                                                               "Details":  "Facets filtering markup verified in snippets/facets.liquid"
+                                                           }
+                                                       ]
+                                         },
+                  "Tier4_RealWorkloads":  {
+                                              "Total":  4,
+                                              "Passed":  4,
+                                              "Failed":  0,
+                                              "Tests":  [
+                                                            {
+                                                                "TestId":  "T4.RW.01",
+                                                                "Description":  "Workload 1: First-Time Desk Setup Shopper Discovery Journey",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "Homepage sections: banner=True, multicolumn=True, featured=True"
+                                                            },
+                                                            {
+                                                                "TestId":  "T4.RW.02",
+                                                                "Description":  "Workload 2: High-Intent Ergonomic Evaluator \u0026 Spec Tab Exploration",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "Product template has main-product: True, spec tabs: 4"
+                                                            },
+                                                            {
+                                                                "TestId":  "T4.RW.03",
+                                                                "Description":  "Workload 3: Multi-Item Bundle Progression \u0026 Free Shipping Threshold Unlock",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "Step 1: $59.00 (pct=78.7%, rem=$16) -\u003e Step 2: $84.00 (pct=100%, unlocked!)"
+                                                            },
+                                                            {
+                                                                "TestId":  "T4.RW.04",
+                                                                "Description":  "Workload 4: Responsive Multi-Breakpoint Accessibility \u0026 Stylesheet Audit",
+                                                                "Status":  "PASS",
+                                                                "Passed":  true,
+                                                                "Details":  "All core stylesheets (base.css, component-accordion.css, section-main-product.css) present"
+                                                            }
+                                                        ]
+                                          }
+              },
+    "CoreValidators":  {
+                           "JsonFiles":  {
+                                             "Failed":  0,
+                                             "Errors":  [
+
+                                                        ],
+                                             "Total":  75,
+                                             "Passed":  75
+                                         },
+                           "SectionSchemas":  {
+                                                  "Failed":  0,
+                                                  "Errors":  [
+
+                                                             ],
+                                                  "Total":  46,
+                                                  "Passed":  38
+                                              },
+                           "LiquidSyntax":  {
+                                                "Failed":  0,
+                                                "Errors":  [
+
+                                                           ],
+                                                "Total":  88,
+                                                "Passed":  88
+                                            },
+                           "TemplateTree":  {
+                                                "Failed":  0,
+                                                "Errors":  [
+
+                                                           ],
+                                                "Total":  17,
+                                                "Passed":  17
+                                            },
+                           "BrandAsset":  {
+                                              "Failed":  0,
+                                              "Errors":  [
+
+                                                         ],
+                                              "Total":  0,
+                                              "Passed":  0
+                                          }
+                       }
+}

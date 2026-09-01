@@ -1,0 +1,112 @@
+{
+  "dimension_comparison": {
+    "type": "collapsible-content",
+    "blocks": {
+      "mounting_clearance": {
+        "type": "collapsible_row",
+        "settings": {
+          "heading": "Universal Under-Desk Clearance & Mounting",
+          "icon": "ruler",
+          "row_content": "<p><strong>Dimensions:</strong> 18.5\" W x 11.8\" D x 2.2\" H<br/><strong>Usable Storage:</strong> 17.2\" W x 10.5\" D x 1.9\" H<br/><strong>Mounting Footprint:</strong> Requires 19\" x 12\" of flat under-desk space. The ultra-slim 2.2\" profile preserves over 95% of ergonomic knee and thigh clearance on sit-stand desks.<br/><strong>Fasteners:</strong> Includes 6x heavy-duty wood screws &amp; pre-cut 3M VHB high-shear adhesive pads for optional zero-drill mounting.</p>"
+        }
+      },
+      "cable_routing": {
+        "type": "collapsible_row",
+        "settings": {
+          "heading": "Integrated Rear Cable Pass-Through & Peripheral Charging",
+          "icon": "lightning_bolt",
+          "row_content": "<p>Dual rear rubberized cable grommets allow power cords, USB-C fast-chargers, and Thunderbolt hubs to route directly into the drawer interior. Dock and charge laptops, tablets, trackpads, and hard drives silently out of sight while maintaining a 100% wireless desktop aesthetic.</p>"
+        }
+      },
+      "load_capacity": {
+        "type": "collapsible_row",
+        "settings": {
+          "heading": "Heavy-Duty 25 lb Load Rating & Silent Ball-Bearing Slides",
+          "icon": "box",
+          "row_content": "<p>Precision-stamped from 1.2mm cold-rolled aerospace steel with a scratch-resistant matte powder-coated finish. Dual-stage full-extension steel ball-bearing rails are cycle-tested for over 50,000 smooth, whisper-silent extensions with zero sag under full payload.</p>"
+        }
+      },
+      "warranty_guarantee": {
+        "type": "collapsible_row",
+        "settings": {
+          "heading": "30-Day Setup Guarantee & Lifetime Hardware Warranty",
+          "icon": "check_mark",
+          "row_content": "<p>Every FocusDrawer is engineered for a lifetime of heavy daily use. We back all hardware, glides, and mounting brackets with an unconditional Lifetime Replacement Warranty and our 30-Day 'Clean Desk' Risk-Free Trial. If your workspace isn't visibly transformed, return it for a full refund.</p>"
+        }
+      }
+    },
+    "block_order": [
+      "mounting_clearance",
+      "cable_routing",
+      "load_capacity",
+      "warranty_guarantee"
+    ],
+    "settings": {
+      "caption": "TECHNICAL HIGHLIGHTS",
+      "heading": "Built to Exacting Tolerances",
+      "heading_size": "h1",
+      "heading_alignment": "center",
+      "layout": "row",
+      "container_color_scheme": "scheme-2",
+      "color_scheme": "scheme-1",
+      "open_first_collapsible_row": true,
+      "image_ratio": "adapt",
+      "desktop_layout": "image_second",
+      "padding_top": 48,
+      "padding_bottom": 48
+    }
+  },
+  "customer_testimonials": {
+    "type": "multicolumn",
+    "blocks": {
+      "testimonial_alex": {
+        "type": "column",
+        "settings": {
+          "title": "★★★★★ \"The single best upgrade to my standing desk.\"",
+          "text": "<p>\"Everything from my iPad and backup SSDs to daily carry pens lives cleanly under my desk now. My desktop is completely clear, and I can lock into 4-hour deep coding sessions with zero visual friction.\"</p><p><strong>— Alex M.</strong><br/><span style=\"color: #E5A93C;\">✓ Verified Buyer</span> · <em>Lead Software Engineer</em></p>",
+          "link_label": "",
+          "link": ""
+        }
+      },
+      "testimonial_david": {
+        "type": "column",
+        "settings": {
+          "title": "★★★★★ \"Uncompromising build quality & smooth glide.\"",
+          "text": "<p>\"Solid matte steel, zero wobble, and the rear cable pass-through is pure genius. It holds my heavy sketch tablets and drafting tools effortlessly. Mounting with the 3M VHB pads took under 3 minutes.\"</p><p><strong>— David K.</strong><br/><span style=\"color: #E5A93C;\">✓ Verified Buyer</span> · <em>Industrial Designer</em></p>",
+          "link_label": "",
+          "link": ""
+        }
+      },
+      "testimonial_elena": {
+        "type": "column",
+        "settings": {
+          "title": "★★★★★ \"Total workflow momentum in my studio.\"",
+          "text": "<p>\"I went from a chaotic desktop covered in notes and cords to a pristine studio cockpit. The ultra-slim profile means zero knee bumps even when my sit-stand desk is lowered. Worth every single penny.\"</p><p><strong>— Elena R.</strong><br/><span style=\"color: #E5A93C;\">✓ Verified Buyer</span> · <em>Founder &amp; Content Creator</em></p>",
+          "link_label": "",
+          "link": ""
+        }
+      }
+    },
+    "block_order": [
+      "testimonial_alex",
+      "testimonial_david",
+      "testimonial_elena"
+    ],
+    "settings": {
+      "title": "Trusted by High-Output Setups",
+      "heading_size": "h1",
+      "image_width": "third",
+      "image_ratio": "circle",
+      "button_label": "Join 10,000+ Clean Desk Setups",
+      "button_link": "shopify://collections/all",
+      "columns_desktop": 3,
+      "column_alignment": "left",
+      "background_style": "primary",
+      "color_scheme": "scheme-2",
+      "columns_mobile": "1",
+      "swipe_on_mobile": true,
+      "padding_top": 56,
+      "padding_bottom": 56
+    }
+  }
+}

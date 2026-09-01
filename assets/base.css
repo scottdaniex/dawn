@@ -8,9 +8,9 @@ collection-component {
   --alpha-button-border: 1;
   --alpha-link: 0.85;
   --alpha-badge-border: 0.1;
-  --focused-base-outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
+  --focused-base-outline: 0.2rem solid #E5A93C;
   --focused-base-outline-offset: 0.3rem;
-  --focused-base-box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  --focused-base-box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(229, 169, 60, 0.4);
 }
 
 .product-card-wrapper .card,
@@ -1276,6 +1276,12 @@ button.shopify-payment-button__button--unbranded {
   transition: box-shadow var(--duration-short) ease;
 }
 
+.button:not([disabled]):hover {
+  box-shadow: 0 4px 16px rgba(229, 169, 60, 0.25);
+  transform: translateY(-1px);
+  transition: transform var(--duration-short) ease, box-shadow var(--duration-short) ease;
+}
+
 .button:not([disabled]):hover::after,
 .shopify-challenge__button:hover::after,
 .customer button:hover::after,
@@ -1296,8 +1302,8 @@ button.shopify-payment-button__button--unbranded {
 .shopify-payment-button__button--unbranded:focus-visible,
 .shopify-payment-button__button--unbranded:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.5rem rgba(var(--color-foreground), 0.5),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.5rem #E5A93C,
+    0 0 0.5rem 0.4rem rgba(229, 169, 60, 0.4);
 }
 
 .button:focus:not(:focus-visible):not(.focused),

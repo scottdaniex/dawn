@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Simple systems for busy minds \u2014 placeholder launch offer: free shipping over $50",
+            "text": "FREE SHIPPING ON WORKSPACE BUNDLES OVER $50 \u2726 30-DAY SETUP GUARANTEE",
             "text_alignment": "center",
             "color_scheme": "scheme-3",
             "link": "shopify://collections/all"
@@ -32,7 +32,7 @@
       "type": "header",
       "settings": {
         "color_scheme": "scheme-1",
-        "menu_color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-2",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",

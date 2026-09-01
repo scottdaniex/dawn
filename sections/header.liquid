@@ -204,6 +204,20 @@
                 preload: true
             }}
           </div>
+        {%- elsif 'focusdrawer-logo.png' != blank -%}
+          <div class="header__heading-logo-wrapper">
+            {%- assign logo_alt = shop.name | escape -%}
+            {%- assign logo_width_val = settings.logo_width | default: 160 -%}
+            <img
+              src="{{ 'focusdrawer-logo.png' | asset_url }}"
+              class="header__heading-logo motion-reduce"
+              width="{{ logo_width_val }}"
+              height="{{ logo_width_val }}"
+              alt="{{ logo_alt }}"
+              loading="eager"
+              fetchpriority="high"
+            >
+          </div>
         {%- else -%}
           <span class="h2">{{ shop.name }}</span>
         {%- endif -%}
@@ -246,6 +260,20 @@
                 sizes: sizes,
                 preload: true
             }}
+          </div>
+        {%- elsif 'focusdrawer-logo.png' != blank -%}
+          <div class="header__heading-logo-wrapper">
+            {%- assign logo_alt = shop.name | escape -%}
+            {%- assign logo_width_val = settings.logo_width | default: 160 -%}
+            <img
+              src="{{ 'focusdrawer-logo.png' | asset_url }}"
+              class="header__heading-logo"
+              width="{{ logo_width_val }}"
+              height="{{ logo_width_val }}"
+              alt="{{ logo_alt }}"
+              loading="eager"
+              fetchpriority="high"
+            >
           </div>
         {%- else -%}
           <span class="h2">{{ shop.name }}</span>
@@ -465,6 +493,8 @@
     "name": {{ shop.name | json }},
     {% if settings.logo %}
       "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
+    {% else %}
+      "logo": {{ 'focusdrawer-logo.png' | asset_url | prepend: "https:" | json }},
     {% endif %}
     "sameAs": [
       {{ settings.social_twitter_link | json }},

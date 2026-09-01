@@ -13,9 +13,21 @@
   outline: none;
 }
 
-.list-menu__item--active {
+/* Desktop Active Menu Link Gold Indicator */
+.header__active-menu-item {
+  color: #E5A93C;
+  font-weight: 600;
   text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  text-decoration-color: #E5A93C;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.2rem;
+}
+
+.list-menu__item--active {
+  color: #E5A93C !important;
+  text-decoration: underline;
+  text-decoration-color: #E5A93C;
+  text-underline-offset: 0.4rem;
 }
 
 .list-menu__item--active:hover {

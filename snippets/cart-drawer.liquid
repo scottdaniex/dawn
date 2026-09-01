@@ -32,6 +32,7 @@
           <div class="cart-drawer__warnings center{% if settings.cart_drawer_collection != blank %} cart-drawer__warnings--has-collection{% endif %}">
             <div class="cart-drawer__empty-content">
               <h2 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h2>
+              <p class="cart__empty-subtext light">Your workspace setup is currently empty. Explore our modular drawers and organizers to get started.</p>
               <button
                 class="drawer__close"
                 type="button"
@@ -42,7 +43,7 @@
                   {{- 'icon-close.svg' | inline_asset_content -}}
                 </span>
               </button>
-              <a href="{{ routes.all_products_collection_url }}" class="button">
+              <a href="{{ routes.all_products_collection_url }}" class="button button--primary">
                 {{ 'general.continue_shopping' | t }}
               </a>
 
@@ -74,6 +75,52 @@
           </span>
         </button>
       </div>
+
+      {%- if cart != empty -%}
+        {%- liquid
+          assign free_shipping_threshold = 5000
+          assign cart_total = cart.total_price | default: 0
+          assign remaining_amount = free_shipping_threshold | minus: cart_total
+          if remaining_amount <= 0
+            assign progress_percentage = 100
+            assign is_unlocked = true
+          else
+            assign is_unlocked = false
+            if free_shipping_threshold > 0
+              assign progress_percentage = cart_total | times: 100.0 | divided_by: free_shipping_threshold | round | at_most: 100
+            else
+              assign progress_percentage = 100
+            endif
+          endif
+        -%}
+        <div
+          class="cart-drawer__free-shipping cart-drawer__shipping-meter{% if is_unlocked %} is-unlocked{% endif %}"
+          data-threshold="{{ free_shipping_threshold }}"
+          role="status"
+          aria-live="polite"
+          aria-label="Free shipping progress"
+        >
+          <div class="cart-drawer__free-shipping-message shipping-meter__message">
+            {%- if is_unlocked -%}
+              <span class="cart-drawer__free-shipping-icon shipping-meter__icon" aria-hidden="true">🎉</span>
+              <span class="cart-drawer__free-shipping-text">You've unlocked <strong>FREE Shipping</strong> on your workspace setup!</span>
+            {%- else -%}
+              <span class="cart-drawer__free-shipping-icon shipping-meter__icon" aria-hidden="true">🚚</span>
+              <span class="cart-drawer__free-shipping-text">Add <strong>{{ remaining_amount | money }}</strong> more to unlock <strong>FREE Shipping</strong></span>
+            {%- endif -%}
+          </div>
+          <div
+            class="cart-drawer__free-shipping-bar-track shipping-meter__bar"
+            role="progressbar"
+            aria-valuenow="{{ progress_percentage }}"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-label="Free shipping progress"
+          >
+            <div class="cart-drawer__free-shipping-bar-fill shipping-meter__fill shipping-meter__progress" style="width: {{ progress_percentage }}%;"></div>
+          </div>
+        </div>
+      {%- endif -%}
       <cart-drawer-items
         view-event-payload="{{ cart | standard_event_data: 'view', context: 'dialog' | escape }}"
         view-event-trigger="manual"

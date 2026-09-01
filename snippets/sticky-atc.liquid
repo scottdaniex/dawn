@@ -1,0 +1,130 @@
+{% comment %}
+  Renders FocusDrawer Sticky Add to Cart bar on scroll
+  Accepts:
+  - product: {Object} Liquid product object
+  - section_id: {String} Section ID
+  - color_scheme: {String} Color scheme setting
+  
+  Usage:
+  {% render 'sticky-atc', product: product, section_id: section.id, color_scheme: section.settings.color_scheme %}
+{% endcomment %}
+
+{%- unless product == blank -%}
+  {{ 'component-sticky-atc.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'sticky-atc.js' | asset_url }}" defer="defer"></script>
+
+  {%- assign selected_variant = product.selected_or_first_available_variant -%}
+
+  <sticky-atc
+    id="StickyATC-{{ section_id }}"
+    class="sticky-atc color-{{ color_scheme | default: 'scheme-2' }} gradient"
+    data-section-id="{{ section_id }}"
+    data-product-id="{{ product.id }}"
+    aria-hidden="true"
+  >
+    <div class="sticky-atc__container page-width">
+      <div class="sticky-atc__product-info">
+        <div class="sticky-atc__media-wrapper">
+          {%- if selected_variant.featured_image != blank -%}
+            <img
+              src="{{ selected_variant.featured_image | image_url: width: 120 }}"
+              alt="{{ selected_variant.featured_image.alt | default: product.title | escape }}"
+              class="sticky-atc__image"
+              width="52"
+              height="52"
+              loading="lazy"
+              id="StickyATCImage-{{ section_id }}"
+            >
+          {%- elsif product.featured_image != blank -%}
+            <img
+              src="{{ product.featured_image | image_url: width: 120 }}"
+              alt="{{ product.featured_image.alt | default: product.title | escape }}"
+              class="sticky-atc__image"
+              width="52"
+              height="52"
+              loading="lazy"
+              id="StickyATCImage-{{ section_id }}"
+            >
+          {%- endif -%}
+        </div>
+        <div class="sticky-atc__details">
+          <span class="sticky-atc__title">{{ product.title | escape }}</span>
+          <div class="sticky-atc__price-wrapper">
+            <span class="sticky-atc__price" id="StickyATCPrice-{{ section_id }}">
+              {{ selected_variant.price | money }}
+            </span>
+            <s class="sticky-atc__compare-price{% unless selected_variant.compare_at_price > selected_variant.price %} hidden{% endunless %}" id="StickyATCComparePrice-{{ section_id }}">
+              {%- if selected_variant.compare_at_price > selected_variant.price -%}
+                {{ selected_variant.compare_at_price | money }}
+              {%- endif -%}
+            </s>
+          </div>
+        </div>
+      </div>
+
+      <div class="sticky-atc__actions">
+        {%- unless product.has_only_default_variant -%}
+          <div class="sticky-atc__variant-wrapper">
+            <select
+              id="StickyATCSelect-{{ section_id }}"
+              class="sticky-atc__select"
+              aria-label="{{ 'products.product.select_options' | t | default: 'Select variant' }}"
+            >
+              {%- for variant in product.variants -%}
+                <option
+                  value="{{ variant.id }}"
+                  {% if variant.id == selected_variant.id %}
+                    selected="selected"
+                  {% endif %}
+                  {% unless variant.available %}
+                    disabled="disabled"
+                  {% endunless %}
+                  data-price="{{ variant.price | money }}"
+                  data-compare-price="{% if variant.compare_at_price > variant.price %}{{ variant.compare_at_price | money }}{% endif %}"
+                  data-available="{{ variant.available }}"
+                  data-image="{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 120 }}{% endif %}"
+                >
+                  {{ variant.title }}
+                  {% unless variant.available %} - {{ 'products.product.sold_out' | t | default: 'Sold out' }}{% endunless %}
+                </option>
+              {%- endfor -%}
+            </select>
+            <span class="svg-wrapper sticky-atc__caret">
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
+          </div>
+        {%- endunless -%}
+
+        <button
+          type="button"
+          id="StickyATCButton-{{ section_id }}"
+          class="sticky-atc__button button button--primary"
+          {% unless selected_variant.available %}
+            disabled="disabled"
+          {% endunless %}
+        >
+          <span class="sticky-atc__button-text">
+            {%- if selected_variant == null -%}
+              {{ 'products.product.unavailable' | t | default: 'Unavailable' }}
+            {%- elsif selected_variant.available == false -%}
+              {{ 'products.product.sold_out' | t | default: 'Sold Out' }}
+            {%- else -%}
+              {{ 'products.product.add_to_cart' | t | default: 'Add to Cart' }}
+            {%- endif -%}
+          </span>
+          <div class="loading__spinner hidden">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              class="spinner"
+              viewBox="0 0 66 66"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </sticky-atc>
+{%- endunless -%}
